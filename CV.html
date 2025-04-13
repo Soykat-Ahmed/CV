@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soykat Ahmed - Web Developer CV</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #0e0e0e, #070707);
+            color: #eddb17;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            border: 4px solid #fff;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        header p {
+            margin: 5px 0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            margin: 0;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            border-radius: 5px;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        .job, .education, .skills, .contact {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .job:hover, .education:hover, .skills:hover, .contact:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .job h3, .education strong {
+            margin: 0;
+            color: #3498db;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #8e44ad;
+            color: #fff;
+            border-radius: 0 0 10px 10px;
+            margin-top: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .contact a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact a:hover {
+            color: #8e44ad;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="6053229982911676244.jpg" alt="Soykat Ahmed's Profile Picture">
+            <div>
+                <h1>Soykat Ahmed</h1>
+                <p>Web Developer</p>
+                <p>Email: ahmedsoykat31@gmail.com | Phone: +8801981455908</p>
+            </div>
+        </header>
+        
+
+        <section class="profile">
+            <h2>Profile</h2>
+            <p>A passionate web developer with experience in creating dynamic and responsive websites. Skilled in HTML, CSS, JavaScript, and modern frameworks to build engaging and user-friendly interfaces.</p>
+        </section>
+
+        <section class="experience">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Frontend Developer at Innovix Company</h3>
+                <p>Jan 2022 - Present</p>
+                <ul>
+                    <li>Developed user interfaces using HTML, CSS, and JavaScript.</li>
+                    <li>Collaborated with backend developers to integrate RESTful APIs.</li>
+                    <li>Optimized websites for speed and scalability.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Web Developer Intern at ABC Inc.</h3>
+                <p>Jun 2021 - Dec 2021</p>
+                <ul>
+                    <li>Assisted in designing and developing company websites.</li>
+                    <li>Tested websites for usability and improved UI/UX.</li>
+                    <li>Maintained and updated content using CMS tools.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Science in Computer Science</strong></p>
+            <p>ISIT polytechnic college, 2023</p>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5, CSS3, JavaScript</li>
+                <li>React, Angular, Vue.js</li>
+                <li>Responsive Design, Bootstrap</li>
+                <li>Git, GitHub, Version Control</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:ahmedsoykat31@example.com">ahmedsoykat31@example.com</a></p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Soykat Ahmed. All rights reserved.</p>
+        </footer>
+    </div>
+
+    
+    <!-- CODE FOR scroll in showcase -->
+    <script>
+        let mountains = document.getElementById("mountains");
+        let text = document.getElementById("text");
+        window.addEventListener("scroll", function () {
+          let value = window.scrollY;
+          text.style.marginRight = value * 2 + "px";
+        });
+        const skillLevels = document.querySelectorAll(".skill-level");
+      </script>
+  
+  
+      <!-- CODE FOR text to speech -->
+      <script>
+        let utterance; // global variable to hold SpeechSynthesisUtterance object
+  
+        function speak() {
+          const paragraph = document.getElementById("paragraph-to-read");
+          if (!paragraph) {
+            console.error("Paragraph element not found.");
+            return;
+          }
+          const text = paragraph.textContent;
+          if (!text) {
+            console.error("Paragraph text not found.");
+            return;
+          }
+          const synth = window.speechSynthesis;
+          if (!synth) {
+            console.error("SpeechSynthesis API not supported.");
+            return;
+          }
+          if (utterance && synth.speaking) {
+            synth.cancel(); // stop speaking if already speaking
+          }
+          utterance = new SpeechSynthesisUtterance(text);
+          synth.speak(utterance);
+          console.log("Text spoken:", text);
+        }
+  
+        function stopSpeaking() {
+          const synth = window.speechSynthesis;
+          if (!synth) {
+            console.error("SpeechSynthesis API not supported.");
+            return;
+          }
+          if (!utterance) {
+            console.warn("Utterance not defined.");
+            return;
+          }
+          if (utterance && synth.speaking) {
+            synth.cancel();
+          }
+        }
+      </script>
+  
+  
+      <!-- CODE FOR filter effect -->
+      <script>
+        const project = document.querySelector("#project");
+        const list = project.querySelectorAll(".list");
+        const itemBox = project.querySelectorAll(".item-box");
+  
+        for (let i = 0; i < itemBox.length; i++) {
+          itemBox[i].classList.add("active1");
+        }
+  
+        for (let i = 0; i < list.length; i++) {
+          list[i].addEventListener("click", function () {
+            for (let j = 0; j < list.length; j++) {
+              list[j].classList.remove("active");
+            }
+            this.classList.add("active");
+  
+            const dataFilter = this.getAttribute("data-filter");
+  
+            for (let k = 0; k < itemBox.length; k++) {
+              const dataItem = itemBox[k].getAttribute("data-item");
+              const shouldDisplay =
+                dataFilter === "all" || dataItem === dataFilter;
+  
+              itemBox[k].classList.toggle("hide", !shouldDisplay);
+              itemBox[k].classList.toggle("active1", shouldDisplay);
+            }
+          });
+        }
+      </script>
+  
+  
+      <!-- CODE FOR scroll to hello -->
+      <script>
+        alert(
+          "Please use Google Chrome & Allow Microphone Permission for better experience!"
+        );
+        if ("webkitSpeechRecognition" in window) {
+          var recognition = new webkitSpeechRecognition();
+          recognition.continuous = true;
+          recognition.interimResults = false;
+          recognition.lang = "en-US";
+          recognition.maxSpeechInputTime = 600000;
+          recognition.onresult = function (event) {
+            var userInput = event.results[0][0].transcript;
+            if (
+              userInput === "hello" ||
+              userInput === "hallo" ||
+              userInput === "helo" ||
+              userInput === "halo"
+            ) {
+              window.location.href =
+                "#about";
+            }
+          };
+  
+          recognition.onerror = function (event) {
+            console.error(event.error);
+          };
+  
+          recognition.start();
+        } else {
+          console.error("Web Speech API is not supported in this browser");
+        }
+      </script>
+      
+      <!-- CODE FOR skill type restart -->
+      <script>
+        const skillsSection = document.querySelector('.skills-section');
+  
+  window.addEventListener('scroll', () => {
+    const sectionTop = skillsSection.getBoundingClientRect().top;
+    const sectionBottom = skillsSection.getBoundingClientRect().bottom;
+  
+    if (sectionTop <= window.innerHeight && sectionBottom >= 0) {
+      // Add class to start animation and reset it
+      skillsSection.classList.add('skills-section-visible', 'restart-animation');
+    } else {
+      // Remove class to stop animation
+      skillsSection.classList.remove('skills-section-visible');
+    }
+  });
+  
+  // Add event listener to remove the reset class after the animation completes
+  skillsSection.addEventListener('animationend', () => {
+    skillsSection.classList.remove('restart-animation');
+  });
+  
+      </script>
+</body>
+</html>
